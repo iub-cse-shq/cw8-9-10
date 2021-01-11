@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs') %>
+
+        <h1>All Articles View</h1>
+        <% console.log(articles) %>
+        <ul>
+            <% articles.forEach((article)=> { %>
+                <li><%= article.title %></li>
+            <% }) %>
+        </ul>
+<%- include('partials/footer.ejs') %>    
